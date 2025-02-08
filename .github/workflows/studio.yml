@@ -62,7 +62,7 @@ jobs:
         run: npx nuxi build --preset github_pages
         env:
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
-          
+          SEC: ${{ secrets.SEC }}
 
       # Deployment job
       - name: Deploy 🚀
